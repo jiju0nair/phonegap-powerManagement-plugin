@@ -17,7 +17,8 @@ Installation
 ---------
 Install with the Phonegap CLI:
 
-    phonegap local plugin install https://github.com/aharris88/phonegap-powerManagement-plugin.git
+    phonegap local plugin install https://github.com/jiju0nair/phonegap-powerManagement-plugin.git
+
 
 Also, make sure that you have the phonegap device plugin installed or it won't work:
 
