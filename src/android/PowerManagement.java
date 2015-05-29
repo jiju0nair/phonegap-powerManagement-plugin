@@ -53,10 +53,13 @@ public class PowerManagement extends CordovaPlugin {
   @Override
   public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
     PluginResult result = null;
+    Log.d("TCPlugin","PowerManagement runs");
     if(action.equals("acquireWakeLock")){
       result = this.acquireWakeLock(32);
+	  Log.d("TCPlugin","PowerManagement locks");
     }else if(action.equals("releaseWakeLock")){
       result = this.releaseWakeLock();
+	  Log.d("TCPlugin","PowerManagement release");
     }
     callbackContext.sendPluginResult(result);
     return true;
